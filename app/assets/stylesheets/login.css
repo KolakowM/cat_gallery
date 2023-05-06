@@ -1,0 +1,105 @@
+.login-form {
+    background-color: #FFE5B4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    border-radius: 5px;
+    border: 2px solid #FFDAB9;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login-form .actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-form input[type="submit"] {
+    background-color: #f66b83;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    margin-top: 5px;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #f66b83;
+}
+
+
+.registration-container {
+    background-color: #FFE5B4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.registration-container label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.registration-container input[type="email"],
+.registration-container input[type="password"] {
+    border-radius: 5px;
+    border: 2px solid #FFDAB9;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.registration-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+.registration-container .actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.registration-container input[type="submit"] {
+    background-color: #f66b83;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    margin: 15px;
+    margin-left: 1px;
+}
+
+.registration-container input[type="submit"]:hover {
+    background-color: #f66b83;
+
+}
+
+
