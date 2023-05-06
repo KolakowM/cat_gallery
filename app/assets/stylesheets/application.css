@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+.pagy_bootstrap_nav {
+    color: #e8a221;
+    background-color: #730E15;
+}
+
+
+.tytul {
+    font-family: Darumadrop One;
+    font-size: 4rem;
+    padding: 10px;
+    margin: auto;
+    text-decoration: none;
+}
+
+
+
+.mtlo{
+    background-color: #FFE5B4; /* Bisque */
+    background: linear-gradient(0deg, #F2EFEF 0%, #FFE5B4 100%); /* Moccasin */
+}
+navbar{
+    box-shadow:2px 10px;
+}
+.navbar {
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    background-color: #BAA9F5; /* Wisteria */
+    background: linear-gradient(171deg, #BAA9F5 51%, #DB9CFF 100%);
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.62);
+}
+.navbar_2{
+    justify-content:space-evenly;
+    font-size:25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:auto;
+}
+
+.nav-link{
+    margin:5px 25px 5px 25px ;
+    color: #4A4A4A; /* Dim Grey */
+
+}
+
+.yield{
+    margin: auto;
+    border-radius: 1px, solid, black;
+     /* Bisque */
+}
+
+.footer_a{
+    background-color: #E3C6D3; /* Thulian Pink */
+    margin-top: 30px;
+    margin:10px 0px 20px 0px;
+
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    max-width: 600px; /* lub inna preferowana wartość */
+    margin: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.62);
+}
+
+.opis{
+    transform: translate(0px, -35px);
+    /*background-color: #f3e3d3; /* Tan */
+    background: linear-gradient(179deg, #000 0%, #2F2C2C 100%);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+p{
+    color: #DADADA;
+}
+
+/*------------------------*/
+
+
+

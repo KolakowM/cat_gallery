@@ -1,0 +1,64 @@
+<!-- Nav tabs -->
+
+<nav class="navbar_2">
+  <div class="container-fluid" style="font-size:25px; display: flex; justify-content: space-between; align-items: center;">
+    <%= link_to "Strona Główna", root_path, class:"nav-link"%> |
+    <p></p>
+    <% def new_user_registration_path
+         # code here
+       end
+       if user_signed_in?%>
+      <h5 class="nav-link">Witaj <%= current_user.email %></h5> |
+      <%= link_to "Edycja Konta", edit_user_registration_path, class:"nav-link" %> |
+      <%= link_to "Wyloguj", destroy_user_session_path, data: { turbo_method: :delete }, class:"nav-link"  %>  |
+      <%= link_to "Dodaj nowe zdjęcie", new_item_path, class:"btn btn-outline-dark", style:"margin-left:20px; margin-right:20px" %> |
+
+    <% else %>
+      <%= link_to 'Zaloguj', new_user_session_path, class:"nav-link" %> |
+      <%= link_to 'Załóż konto', new_user_registration_path, class:"nav-link"  %> |
+    <% end %>
+    </ul>
+
+    <%= link_to "Wesprzyj nas", href="https://buycoffee.to/", class:"nav-link, btn-lg btn btn-success", style:"margin-left:20px" %>
+
+
+  </div>
+</nav>
+
+
+<nav class="navbar_2 navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to "Strona Główna", root_path, class:"nav-link"%>
+        </li>
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <h5 class="nav-link">Witaj <%= current_user.email %></h5>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Edycja Konta", edit_user_registration_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Wyloguj", destroy_user_session_path, data: { turbo_method: :delete }, class:"nav-link"  %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Dodaj nowe zdjęcie", new_item_path, class:"btn btn-outline-dark", style:"margin-left:20px; margin-right:20px" %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to 'Zaloguj', new_user_session_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Załóż konto', new_user_registration_path, class:"nav-link" %>
+          </li>
+        <% end %>
+      </ul>
+      <%= link_to "Wesprzyj nas", href="https://buycoffee.to/", class:"nav-link, btn-lg btn btn-success", style:"margin-left:20px" %>
+    </div>
+  </div>
+</nav>

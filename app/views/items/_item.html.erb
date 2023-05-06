@@ -1,0 +1,90 @@
+<div id="<%= dom_id item %>">
+ <!-- <p>
+    <strong>Name:</strong>
+    <%= item.name %>
+  </p>
+
+  <p>
+    <strong>Title:</strong>
+    <%= item.title %>
+<p>Added by <%= item.user.email %></p>
+ra
+  </p>
+
+  <p>
+    <strong>Content:</strong>
+    <%= item.content %>
+  </p>
+
+  <p>
+    <strong>Publicznosc:</strong>
+    <%= item.publicznosc %>
+  </p>
+
+    <p>
+    <strong>Zdjecie</strong>
+    
+      <% if item.cover_image.attached?%>
+        <%= image_tag item.cover_image, height:"350vh",width:"350vw", style:"border-radius:25px"%>
+        <% else %>
+        <%= item.name %> 
+        <% end %>
+  </p>
+
+</div>
+
+----
+
+  <div id="<%= dom_id item %>">
+<article>
+  <card class="card">
+
+
+      <h2><%= item.name %></h2>
+      <h3><%= item.title %></h3>
+      <% if item.cover_image.attached? %>
+        <%= image_tag item.cover_image, height: "480vh", width: "auto", style: "border-radius: 25px;" %>
+        <% else %>
+        "tutaj powinno być zdjecie"
+      <% end %>
+
+
+      <div class="opis">
+        <% if item.content? %>
+      <p><%= item.content %></p>
+          <% else %>
+          <p><%= item.name %></p>
+          <% end %>
+      </div>
+
+      <p>Dodane przez: <%= item.user.email %></p>
+      <p><strong>Publiczność:</strong> <%= item.publicznosc %></p>
+  </div>
+  </card> -->
+
+
+  <div class="container-fluid">
+    <div class="card text-center mx-auto w-100 max-w-1200">
+      <div class="card-body">
+        <h5 class="card-title"><%= item.name %></h5>
+        <% if item.cover_image.attached? %>
+          <%= image_tag item.cover_image, class: "img-fluid rounded", alt: "Zdjęcie produktu #{item.name}" %>
+        <% else %>
+          <p class="card-text">Tutaj powinno być zdjęcie</p>
+        <% end %>
+
+        <div class="opis">
+          <% if item.content? %>
+            <p><%= item.content %></p>
+          <% else %>
+            <p><%= item.name %></p>
+          <% end %>
+        </div>
+
+        <p style="color: #4A4A4A">Dodane przez: <%= item.user.email %></p>
+
+      </div>
+        <%= link_to "Zobacz", item, class:"btn btn-primary" %>
+    </div>
+  </div>
+</div>

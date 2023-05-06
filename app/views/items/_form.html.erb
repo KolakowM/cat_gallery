@@ -1,0 +1,45 @@
+<%= form_with(model: item) do |form| %>
+  <% if item.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+        <% item.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div style="padding: 25px">
+  <div class="mb-3">
+    <%= form.label "Tutaj najlepiej wpisz imię kota", class: "form-label" %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+
+  <!--div class="mb-3">
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
+  </div-->
+
+  <div class="mb-3">
+    <%= form.label "Opisz krótko swojego kota", class: "form-label" %>
+    <%= form.text_area :content, class: "form-control" %>
+  </div>
+
+  <div class="mb-3 form-check">
+    <%= form.check_box :publicznosc, class: "form-check-input" %>
+    <%= form.label :publicznosc, class: "form-check-label" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label "Zdjęcie", class: "form-label" %>
+    <%= form.file_field :cover_image, class:"form-control" %>
+  </div>
+
+
+  <br />
+    <%= form.submit "Zapisz zdjęcie", class:"btn btn-success"%>
+
+<% end %>
+</div>

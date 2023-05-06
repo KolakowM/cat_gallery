@@ -1,0 +1,71 @@
+<style>
+    /* Resetowanie marginesów i paddingu dla całej strony */
+    * {
+        margin: 0;
+
+        padding: 0;
+    }
+    /* Stylizacja stopki */
+    .footer {
+        background-color: #ffabab;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        margin-top: 15px;
+    }
+    /* Stylizacja kolumn w stopce */
+    .footer-column {
+        flex-basis: calc(100% / 3);
+        text-align: center;
+    }
+    </style>
+
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <img src="/assets/kot.png" alt="Kot" width="115px" height="100px"> <p></p>
+
+      <p class="text-body-secondary">KOCI ALBUM © 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Strona</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><%= link_to "Strona Główna", root_path , class:"nav-link p-0 text-body-secondary"%> </></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Do góry</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Regulamin</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Polityka Prywatności</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">O nas</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Inne Linki</h5>
+      <ul class="nav flex-column">
+        <!--<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>-->
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Kontakt</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><address class="nav-link p-0 text-body-secondary">Adres: Testowa 1 Warszawa </address> </li>
+        <li class="nav-item mb-2"><a href="mailto:kocialbum@gmail.com" class="nav-link p-0 text-body-secondary">kocialbum@gmail.com</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">O nas</a></li>
+        <%= link_to "Wesprzyj nas", href="https://buycoffee.to/", class:"btn-sm btn btn-success", style:"margin-left:20px;text-decoration: none;" %>
+      </ul>
+    </div>
+  </footer>
+</div>

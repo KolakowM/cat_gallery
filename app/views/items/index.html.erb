@@ -1,0 +1,19 @@
+<!--<p style="color: green"><%= notice %></p>
+
+<h1 class="text-center">Kocie Zdjęcia</h1>  -->
+
+
+<div id="items">
+  <% @items.each do |item| %>
+    <%= render item %>
+    <p>
+      <!--<%= link_to "Zobacz", item, class:"btn btn-primary" %> -->
+    </p>
+  <% end %>
+  <div class="d-flex justify-content-center align-items-center">
+    <%== pagy_bootstrap_nav(@pagy) %>
+  </div>
+
+</div>
+
+

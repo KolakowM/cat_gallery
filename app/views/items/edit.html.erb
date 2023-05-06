@@ -1,0 +1,10 @@
+<h1>Editing item</h1>
+
+<%= render "form", item: @item %>
+
+<br>
+
+<div>
+  <%= link_to "Zobacz post", @item , class:"btn btn-info" %> |
+  <%= link_to "Wróć", items_path, class:"btn btn-outline-info" %>
+</div>
